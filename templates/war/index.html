@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/war/style.css">
+    <title>War!</title>
+</head>
+<body>
+    <div id="description">
+        <h1 style="margin-bottom: 1rem; margin-top: 2rem;">Welcome to War!</h1>
+        <p>
+            To play the game, click the player deck to flip the first card. The enemy's card will also flip. Highest card wins, and the winner places both cards at the bottom of their deck. If the cards are the same, each player keeps their card. The game is won by collecting all the cards.
+        </p>
+    </div>
+    <div id="card-counts">
+    <div id="player-count"></div>
+    <div id="enemy-count"></div>
+    </div>
+    <div id="card-area">
+        <div class="deck" id="player">
+            <img src="static/war/img/valknut.svg" alt="Valknut Clipart">
+        </div>
+        <div class="deck" id="enemy">
+            <img src="static/war/img/valknut.svg" alt="Valknut Clipart">
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="betray">Betray!</button>
+        <button onclick="window.location.href='/'">Return to Longship</button>
+    </div>
+</body>
+<script src="static/war/script.js"></script>
+</html>

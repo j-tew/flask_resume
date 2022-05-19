@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Anonymous';
+    src: url(fonts/AnonymousProBold.ttf);
+}
+
+@font-face {
+    font-family: 'MyDisplay';
+    src: url(fonts/MyDisplay.ttf);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    background-color: #2e3440;
+    background-image: url(images/Deer.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #d8dee9;
+    min-height: 400px;
+}
+
+button {
+    color: #d8dee9;
+    background-color: #2e3440;
+    border: solid 3px;
+    border-color: #4c566a;
+    border-radius: 10px;
+    margin: 2px;
+    font-family: 'Anonymous';
+    font-size: 22px;
+}
+
+button:hover {
+    background-color: #3b4252;
+}
+
+.calc-box {
+    background-color: inherit;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: sticky;
+    width: 350px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 5px;
+    border-radius: 20px;
+    border-color: #4c566a;
+}
+
+.calc-screen {
+    padding-right: 5px;
+    background-color: #3b4252;
+    border-radius: 5px;
+    min-height: 50px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-family: 'MyDisplay';
+}
+
+.calc-button-grid {
+    display: grid;
+    height: 350px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.operators {
+    border-color: #6ca1c1;
+}
+
+#equals {
+    grid-row: span 2;
+    border-color: #a3be8c;
+}
+
+#clear {
+    border-color: #bf616a;
+}
+
+#backspace {
+    border-color: #a78ea2;
+}
+
+#decimal {
+    border-color: #88b3b3;
+}
+
+#back {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 350px;
+    border: solid 5px #4c566a;
+    padding: 10px;
+    font-size: 1rem;
+}
